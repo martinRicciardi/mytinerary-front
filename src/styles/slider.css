@@ -1,0 +1,67 @@
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 90%;
+  height: 90vh;
+  margin: 5rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.backgorund-slider{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding-top: 10rem;
+  background-image: url("../images/plane.png");
+  background-position: center;
+  background-size: cover;
+}
+.text-slider{
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: rgba(255, 255, 0, 0.618);
+}
+.title-slider{
+  margin-top: 1rem;
+  font-size: xx-large;
+  background-color: rgba(37, 218, 148, 0.742);
+  font-family:'Times New Roman', Times, serif;
+  text-decoration-line: underline;
+}
