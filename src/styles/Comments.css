@@ -1,0 +1,107 @@
+.send-comment{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    margin: 0% !important;
+    padding: 0% !important;
+    gap: 2rem;
+}
+.input-text{
+    background-color: rgb(232, 232, 232) !important;
+    width: 45vw;
+}
+.input-modify-text{
+    padding-top: 3rem !important;
+    width: 40vw !important;
+}
+.input-container{
+    margin-bottom: 3rem;
+}
+.public-comment-container{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 180, 180);
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+}
+.comment-container{
+    display: flex;
+    justify-content: center;
+}
+.comment{
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+.comment-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.comment-text{
+    width: 30vw;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+}
+.comment-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.comments-modify{
+    display: flex;
+    flex-direction: row;
+}
+.user-email{
+    color: black;
+    padding-left: 1rem;
+}
+@media (max-width: 1001px){
+    .public-comment-container{
+        width: 55vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        border-radius: 1rem;
+    }
+}
+@media (max-width: 650px){
+    .input-text{
+        background-color: rgb(205, 205, 205) !important;
+        width: 30vw;
+    }
+    .no-comment-text{
+        width: 40vw;
+    }
+    .send-comment{
+        width: 50vw;
+    }
+    .user-email{
+        font-size:medium
+    }
+}
+@media (max-width: 800px){
+    .no-activities-text{
+        font-size: small;
+        width: 50vw;
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+}
+@media (max-width: 480px){
+    .comment-data{
+        flex-direction: column;
+    }
+    .user-email{
+        font-size:small;
+        padding-left: 0
+    }
+}

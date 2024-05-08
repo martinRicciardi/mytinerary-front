@@ -1,0 +1,293 @@
+.body-details{
+    min-height: 89vh;
+    width: 100%;
+    background-color: rgb(153, 207, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* cards */
+
+.detail-card{
+    width: 70vw;
+    height: 35vh;
+    margin: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f9183;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 1rem;
+    border: 5px solid black;
+}
+.detail-image{
+    width: 40vw;
+    height: 35vh;
+}
+.detail-image-card{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.detail-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+p{
+    font-size:larger;
+}
+
+/* itineraries */
+
+.itineraries-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.itinerary-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.itinerary{
+    width: 70vw;
+    min-height: 35vh;
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252525;
+    color: rgb(218, 218, 218);
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 1rem;
+    border: 5px solid rgb(218, 218, 218);
+}
+.userimage-container{
+    margin-left: 2rem;
+    width: 13vw;
+    height: 20vh;
+}
+.userimage{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.itinerary-body{
+    width: 50vw;
+}
+.itinerary-title{
+    font-size: 4vw;
+    margin: 0;
+}
+.error-tineraries{
+    color: white;
+}
+
+/* activities */
+
+.activities{
+    display: flex;
+    width: 60vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.activity-box-photo{
+    width: 15vw;
+    height: 20vh;
+}
+.activity-photo{
+    width: 100%;
+    height: 100%;
+}
+.comment-container{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.css-9l5vo-MuiCollapse-wrapperInner{
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+}
+.activity-title{
+    background-color: rgba(255, 255, 255, 0.686);
+    border-radius: 1rem;
+    color: black;
+}
+
+/* /////////////////// */
+
+/* cards media */
+
+@media (max-width: 1200px){
+    .detail-card{
+        width: 60vw;
+        height: 60vh;
+        margin: 3vh;
+        background-color: #3f9183;
+        color: rgb(0, 0, 0);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+        border: 5px solid black;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .detail-image{
+        width: 100%;
+        height: 25vh;
+    }
+    .detail-image-card{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+    }
+    .detail-card-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+@media (max-width: 615px){
+    .detail-card{
+        width: 60vw;
+        height: 60vh;
+        margin: 3vh;
+        background-color: #3f9183;
+        color: rgb(0, 0, 0);
+        font-family: 'Times New Roman', Times, serif;
+        border: 5px solid black;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .detail-image{
+        width: 100%;
+        height: 25vh;
+    }
+    .detail-image-card{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+    }
+    .detail-card-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+@media (max-width: 500px){
+    .detail-card{
+        width: 60vw;
+        height: 65vh;
+        margin: 3vh;
+        background-color: #3f9183;
+        color: rgb(0, 0, 0);
+        font-family: 'Times New Roman', Times, serif;
+        border: 5px solid black;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* itineraries media */
+
+@media (max-width: 1001px){
+    .itinerary-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .itinerary{
+        width: 60vw;
+        min-height: 70vh;
+        margin: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #252525;
+        color: rgb(218, 218, 218);
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 1rem;
+        border: 5px solid rgb(218, 218, 218);
+    }
+    .userimage-container{
+        margin-left: 0;
+        margin-top: 5vh;
+        width: 20vw;
+        height: 20vh;
+    }
+    .itinerary-body{
+        margin-top: 5vh;
+    }
+    .activities{
+        display: flex;
+        width: 70vw;
+        gap: 3rem;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .activity-box-photo{
+        width: 25vw;
+        height: 20vh;
+    }
+}
+@media (max-width: 800px){
+    .userimage-container{
+        margin-left: 0;
+        margin-top: 5vh;
+        width: 30vw;
+        height: 20vh;
+    }
+    .activity-box-photo{
+        width: 30vw;
+        height: 20vh;
+    }
+}
+@media (max-width: 500px){
+    .userimage-container{
+        margin-left: 0;
+        margin-top: 5vh;
+        width: 40vw;
+        height: 20vh;
+    }
+    .activity-box-photo{
+        width: 40vw;
+        height: 20vh;
+    }
+}
+@media (max-width: 400px){
+    .userimage-container{
+        margin-left: 0;
+        margin-top: 5vh;
+        width: 50vw;
+        height: 20vh;
+    }
+    .activity-box-photo{
+        width: 50vw;
+        height: 20vh;
+    }
+}

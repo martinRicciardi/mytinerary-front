@@ -1,0 +1,11 @@
+.body-cities{
+    min-height: 89vh;
+    width: 100%;
+    background-color: rgb(153, 207, 228);
+}
+.error{
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}

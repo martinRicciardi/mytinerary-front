@@ -1,0 +1,41 @@
+.Footer{
+    height: 10rem;
+    background-color: #449c86;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-networks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-footer{
+    width: 30vh;
+}
+.footer-title{
+    font-size: medium;
+    font-family:fantasy;
+}
+.nav-icons{
+    margin: 1rem !important;
+}
+
+@media (max-width: 650px){
+    .logo-footer{
+        width: 20vh;
+    }
+}
+@media (max-width: 650px){
+    .logo-footer{
+        width: 15vh;
+    }.nav-icons{
+        margin: 0 !important;
+    }
+}
