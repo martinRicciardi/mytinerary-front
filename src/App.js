@@ -9,7 +9,7 @@ import SignIn from './pages/SignIn'
 import {Route,Routes} from "react-router-dom"
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import userActions from './redux/actions/userActions';
 import Alerts from './components/Alerts';
 
@@ -20,8 +20,8 @@ function App() {
       const token = localStorage.getItem("token")
       dispatch(userActions.verifyToken(token))
     }
-  },[])
-  const user = useSelector(store=>store.userReducers.user)
+  })
+  // const user = useSelector(store=>store.userReducers.user)
   // console.log(user);
 
   return (

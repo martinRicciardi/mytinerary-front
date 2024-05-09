@@ -1,7 +1,7 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios"
+// import axios from "axios"
 import { useEffect } from "react";
 import { Link as LinkRouter } from "react-router-dom" 
 import "../styles/detailPages.css"
