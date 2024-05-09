@@ -11,7 +11,7 @@ export default function CardsCities(props) {
     const dispatch = useDispatch()
     useEffect(()=>{
         dispatch(citiesActions.filterCities(props.input))
-    })
+    }, [props.input, dispatch])
 
     const filterRedux = useSelector(store => store.citiesReducers.filterCity)
 

@@ -46,7 +46,7 @@ const handleExpandClick = () => {
 
     useEffect(() => {
         dispatch(itinerariesActions.findTinFromCity(cityid))
-    })
+    }, [reload, cityid, dispatch])
 
     return(
                     <div className="itinerary">

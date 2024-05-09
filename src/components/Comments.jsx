@@ -57,7 +57,7 @@ function Comments ({itinerary, cityid}){
 
     useEffect(() => {
         dispatch(itinerariesActions.findTinFromCity(cityid))
-    })
+    }, [reload, cityid, dispatch])
     // console.log(itinerary)
     return(
         <>

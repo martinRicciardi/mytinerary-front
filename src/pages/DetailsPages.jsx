@@ -18,7 +18,7 @@ function DetailsPages(){
 
     useEffect(() => {
         dispatch(citiesActions.getOneCity(id))
-    })
+    }, [dispatch, id])
 
     const card = useSelector(store => store.citiesReducers.city)
     
