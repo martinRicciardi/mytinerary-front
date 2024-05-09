@@ -9,10 +9,9 @@ import { useSelector } from "react-redux";
 export default function CardsCities(props) {
 
     const dispatch = useDispatch()
-
     useEffect(()=>{
         dispatch(citiesActions.filterCities(props.input))
-    },[props.input])
+    })
 
     const filterRedux = useSelector(store => store.citiesReducers.filterCity)
 

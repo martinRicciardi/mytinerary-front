@@ -14,7 +14,7 @@ function Itineraries({cityid}){
 
     useEffect(()=>{
         dispatch(itinerariesActions.findTinFromCity(id))
-    },[])
+    })
     
     const itinerary = useSelector(store=>store.itinerariesReducers.itinerary)
 

@@ -57,7 +57,7 @@ function Comments ({itinerary, cityid}){
 
     useEffect(() => {
         dispatch(itinerariesActions.findTinFromCity(cityid))
-    }, [reload])
+    })
     // console.log(itinerary)
     return(
         <>
@@ -80,7 +80,7 @@ function Comments ({itinerary, cityid}){
                             </div>
                         </div>)) :
                         itinerary.comments.map(comments=>(
-                            user.id == comments.userID._id?(
+                            user.id === comments.userID._id?(
                         <div className="public-comment-container" key={comments._id}>
                             <div className="comment-container">
                                 <div className="comment-data">

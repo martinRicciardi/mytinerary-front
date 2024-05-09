@@ -16,7 +16,7 @@ export default function SearchCities() {
 
     useEffect(() => {
         dispatch(citiesActions.getCities()) //llamas a la accion que queres ejecutar, cuando ejecutas el metodo disopatch, es lo que se envia para que despues lo llamas por paarametros en las actions
-    }, [])
+    })
 
     const citiesRedux = useSelector(store => store.citiesReducers.cities) //entras al store, el nombre de la variable es el que definis en initialState en el reducer (store = mainReducers, lo que declaramos en el index.js)
 

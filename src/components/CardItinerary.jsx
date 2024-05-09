@@ -24,8 +24,8 @@ const ExpandMore = styled((props) => {
 }));
 
 function CardItinerary({itinerary, cityid}) {
-    const [likes, setLikes] = useState()
-    const [reload, setReload] = useState()
+    let [likes, setLikes] = useState()
+    let [reload, setReload] = useState(false)
     const [expanded, setExpanded] = React.useState(false);
 
 const handleExpandClick = () => {
@@ -39,14 +39,14 @@ const handleExpandClick = () => {
     const user = useSelector(store => store.userReducers.user)
 
     async function likeDislike() {
-        const like = await dispatch(itinerariesActions.like(itinerary._id))
+        likes = await dispatch(itinerariesActions.like(itinerary._id))
         setReload(!reload)
-        setLikes(like)
+        setLikes(likes)
     }
 
     useEffect(() => {
         dispatch(itinerariesActions.findTinFromCity(cityid))
-    }, [reload])
+    })
 
     return(
                     <div className="itinerary">
@@ -88,7 +88,7 @@ const handleExpandClick = () => {
                                     itinerary.activities.map(activities=>(
                                         <div key={activities._id} className="activity-box-photo">
                                             <p className="activity-title">{activities.activity}</p>
-                                            <img src={activities.activityphoto} alt="image-activity" className="activity-photo" />
+                                            <img src={activities.activityphoto} alt={activities._id} className="activity-photo" />
                                         </div>
                                     )) : <h1>No activities available!</h1>}
                                     </div>

@@ -13,31 +13,31 @@ const userActions = {
         }
     },
     signInUser: (logedUser) => {
-        try{
-        return async (dispatch, getState) => {
-            const res = await axios.post("https://mytinerary-back-plrr.onrender.com/api/signIn", {logedUser})
-            // dispatch({type: "MESSAGE", payload: console.log(res)})
-            if(res.data.success) {
-                localStorage.setItem('token', res.data.response.token)
-                dispatch({
-                    type: "USER",
-                    payload: res.data.response.userData,
-                    message: "Welcome again"
-                })
-            }else{
-                dispatch({
-                    type: "MESSAGE",
-                    payload: {
-                        view: true,
-                        message: res.data.message,
-                        success: res.data.success
+            return async (dispatch, getState) => {
+                try {
+                    const res = await axios.post("https://mytinerary-back-plrr.onrender.com/api/signIn", { logedUser })
+                    // dispatch({type: "MESSAGE", payload: console.log(res)})
+                    if (res.data.success) {
+                        localStorage.setItem('token', res.data.response.token)
+                        dispatch({
+                            type: "USER",
+                            payload: res.data.response.userData,
+                            message: "Welcome again"
+                        })
+                    } else {
+                        dispatch({
+                            type: "MESSAGE",
+                            payload: {
+                                view: true,
+                                message: res.data.message,
+                                success: res.data.success
+                            }
+                        })
                     }
-                })
+                } catch (error) {
+                    console.log(error)
+                }
             }
-            return res
-        }}catch (error){
-            console.log(error)
-        }
     },
     signOutUser: (email) => {
         return async (dispatch, getState) => {
